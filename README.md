@@ -78,4 +78,4 @@
     ![Last Run](image-9.png)
 
 # Summary
-    
+    While I was able to finally achieve an accuracy of 75%, it stands to reason that there might be the opportunity to improve this further.  Improving the overall data optimization would be one place to start, but a different classication model such as a Random forest might work as well as our target variable is Yes/No and random forests use Decision Trees and give responses that are often True/False.
