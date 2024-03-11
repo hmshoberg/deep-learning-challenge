@@ -1,5 +1,3 @@
-# deep-learning-challenge
-
 # Neural Network Model Report
 
 # Overview
@@ -53,12 +51,31 @@
 
     ![Hyper1](image-2.png)
 
+    ![Result](image-3.png)
+
+    There was not a great amount of approvement - only 1% difference, so I went back to the drawing board for a third time and tested with three layers and added a drop layer to see if that would make a difference as a dropout can force a neural network to be less dependent on specific neurons and rely on different combinations of features and neurons. 
+
+    Attempt # 3:
+
+    ![Try_3](image-5.png)
+
+    With a lack of improvement, I went back to the original data to see if any other variables could be removed and if that would make a difference in the outcome. 
+
+    Attempt # 4:
+
+    With the Organization variable removed, I used a Hyperparameter model once again as that had a better result earlier, but there was no improvement.
+
+    ![Hyper2](image-6.png)
+
+    Attempt # 5 :
+
+    For one last attempt, I decided to adjust the original bins, but also look into the possibility of binning the Names or EINs (running either without binning caused a crash when attempting to run due to so much data). I then used three hidden layers with gradually increasing nodes.
+
+    ![Names](image-8.png)
     
+    With this last attempt, an accuracy of 75% was finally achieved.
 
-
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take in your attempts to increase model performance?
+    ![Last Run](image-9.png)
 
 # Summary
-    Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+    
